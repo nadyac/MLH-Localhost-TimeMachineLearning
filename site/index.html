@@ -1,0 +1,52 @@
+<html lang="en">
+    <head>
+        <title>Time Machine Learning: Doc or Marty? </title>
+        <link rel="stylesheet" href="site.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+          <a href="https://github.com/MLH"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+  <div id='banner'/>
+  <div id='header'>
+    <img style="width:300px;" src='../img/localhost_nexosis.png'/>
+  </div>
+
+        <header>
+            <h1 class="title">Doc or Marty Quotes Classifier</h1>
+        </header>
+
+        <main id="app">
+            <section>
+
+                <h1>Predict Whether a Quote from Back to the Future was Said by Doc or Marty!</h1>
+
+                <p>Enter a quote below and see which speaker (Marty or Doc) your model predicts using the power of <em>machine learning</em>.</p>
+
+                <div>
+                    <textarea v-model="quoteText" placeholder="Enter the quote text here"></textarea>
+                </div>
+
+                <button v-on:click="classinate">Classify my quote!</button>
+
+                <p class="result">{{ classination }}</p>
+
+            </section>
+
+            <aside>
+                <img src="../img/bbtfDocMarty3.jpg">
+                <p class="result">{{ classination }}</p>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p><a href="https://nexosis.com/"><img src="nexosis-powered-stacked-black_lg.png"></a></p>
+            <p><a href="https://github.com/guyroyse/bigfoot-classinator">Source Code</a></p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+        <script src="app.js"></script>
+
+    </body>
+</html>
