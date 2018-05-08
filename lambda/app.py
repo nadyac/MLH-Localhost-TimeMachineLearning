@@ -7,7 +7,7 @@ def classinate_bigfoot(event, context):
     report_text = event['quoteText']
 
     # create the Nexosis API client using the API key in an environment variable
-    nexosis_api_key = '978015add54a4740ba495485f3e3d9b3'
+    nexosis_api_key = ''
     nexosis_client = Client(nexosis_api_key)
 
     # the API can make several predictions at a time but we only want one so make this array
